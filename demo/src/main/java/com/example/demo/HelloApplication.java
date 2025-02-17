@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
 
 import java.awt.*;
 import java.io.IOException;
@@ -18,7 +19,9 @@ public class HelloApplication extends Application {
         stage.setTitle("Calculadora");
         stage.setScene(scene);
         stage.show();
-        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icon.png"))));
+        System.out.println(getClass().getResource("icon.png"));
+
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("icon.png"))));
 
 
 //        scene.getStylesheets().add(HelloApplication.class.getResource("styles.css").toExternalForm());
