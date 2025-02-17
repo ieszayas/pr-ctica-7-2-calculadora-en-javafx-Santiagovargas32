@@ -1,0 +1,62 @@
+/* Estilo del display */
+#display {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-font-size: 32px;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-padding: 10px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* Estilo de los botones */
+/* Centrar el texto en los botones */
+.button {
+    -fx-font-size: 20px;
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #333333;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 2, 2);
+    -fx-alignment: CENTER;
+    -fx-pref-width: 60px; /* Ajuste de ancho para mejor alineación */
+    -fx-pref-height: 60px; /* Ajuste de alto para mejor alineación */
+}
+
+.button:pressed {
+    -fx-background-color: #d0d0d0;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 4, 0, 2, 2);
+}
+
+/* Botón de operaciones */
+.button-operator {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: white;
+}
+
+.button-operator:pressed {
+    -fx-background-color: #e68900;
+}
+
+/* Botón de igual */
+.button-equal {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+}
+
+.button-equal:pressed {
+    -fx-background-color: #43a047;
+}
+
+/* Botón de reset */
+.button-clear {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+}
+
+.button-clear:pressed {
+    -fx-background-color: #d32f2f;
+}

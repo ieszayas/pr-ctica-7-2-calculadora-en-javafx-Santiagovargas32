@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="367.0" prefWidth="281.0" spacing="10" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CalculadoraController">
+
+    <Label fx:id="display" prefHeight="69.0" prefWidth="220.0" styleClass="display" text="0" />
+
+    <HBox prefHeight="17.0" prefWidth="148.0" spacing="10">
+        <Button onAction="#handleButton" prefHeight="44.0" prefWidth="0.0" styleClass="button" text="7" />
+        <Button onAction="#handleButton" styleClass="button" text="8" />
+        <Button onAction="#handleButton" styleClass="button" text="9" />
+        <Button onAction="#handleButton" styleClass="button button-operator" text="/" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Button onAction="#handleButton" styleClass="button" text="4" />
+        <Button onAction="#handleButton" styleClass="button" text="5" />
+        <Button onAction="#handleButton" styleClass="button" text="6" />
+        <Button onAction="#handleButton" styleClass="button button-operator" text="*" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Button onAction="#handleButton" styleClass="button" text="1" />
+        <Button onAction="#handleButton" styleClass="button" text="2" />
+        <Button onAction="#handleButton" styleClass="button" text="3" />
+        <Button onAction="#handleButton" styleClass="button button-operator" text="+" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Button onAction="#handleButton" styleClass="button" text="0" />
+        <Button onAction="#handleButton" styleClass="button button-clear" text="C" />
+        <Button onAction="#handleButton" styleClass="button button-equal" text="=" />
+        <Button onAction="#handleButton" styleClass="button button-operator" text="-" />
+    </HBox>
+</VBox>
