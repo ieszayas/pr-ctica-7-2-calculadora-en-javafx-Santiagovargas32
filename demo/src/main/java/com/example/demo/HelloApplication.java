@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
+import java.util.Objects;
 
 public class HelloApplication extends Application {
     @Override
@@ -16,7 +18,10 @@ public class HelloApplication extends Application {
         stage.setTitle("Calculadora");
         stage.setScene(scene);
         stage.show();
-        scene.getStylesheets().add(HelloApplication.class.getResource("styles.css").toExternalForm());
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icon.png"))));
+
+
+//        scene.getStylesheets().add(HelloApplication.class.getResource("styles.css").toExternalForm());
 
     }
 
