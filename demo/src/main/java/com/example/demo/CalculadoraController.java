@@ -48,8 +48,11 @@ public class CalculadoraController {
 
     @FXML
     private void handleMemoryRecall(ActionEvent event) {
-        display.setText(String.valueOf(memoria));
-        start = false;
+        if (memoria != 0) {
+            display.setText(String.valueOf(memoria));
+            start = true;
+        }
+
     }
 
     @FXML
