@@ -3,6 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import java.awt.Label?>
 <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" spacing="10" stylesheets="@styles.css"
       xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.example.demo.CalculadoraController">
